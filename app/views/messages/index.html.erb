@@ -1,4 +1,33 @@
 <div class="wrapper">
-  <%= render "side_bar" %>
-  <%= render "main_chat" %>
+  <div class="side">
+    <div class="side_header">
+      <div class="side_header_user">
+        Tom
+      </div>
+      <div class="side_header_btn">
+        チャットを作成する
+      </div>
+    </div>
+    <div class="side_box">
+      <div class="side_box_chatrooms">
+        <a href="">
+          チャットルームの名前
+        </a>
+      </div>
+    </div>
+    <%= render "side_bar" %>
+  </div>
+
+  <div class="main">
+    <div class="main_header">
+      <%= render "main_chat" %>
+    </div>
+    <div class="main_box">
+    </div>
+    <div class="main_footer">
+    </div>
+  </div>
 </div>
+
+
+
