@@ -1,0 +1,174 @@
+/* 大枠 */
+
+.wrapper{
+  display: flex;
+}
+
+.side{
+  background-color: #253141;
+  width: 300px;
+  height: 100vh;
+}
+
+.side_header{
+  width: 100%;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side_box{
+  background-color: #2f3e51;
+  width: 100%;
+  height: calc(100vh - 100px);
+  padding: 20px 20px 0;
+  overflow: scroll;
+}
+
+.main{
+  background-color: #FFFFFF;
+  width: calc(100vw - 300px);
+}
+
+.main_header{
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_box{
+  background-color: #fafafa;
+  width: 100%;
+  height: calc(100vh - 190px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+
+.main_footer{
+  background-color: #dddddd;
+  width: 100%;
+  height: 90px;
+  padding: 20px 40px;
+}
+
+/* サイドバー上部 */
+
+.side_header_user{
+  color: #fafafa;
+  font-size: 16px;
+}
+
+.side_header_btn{
+  color: deepskyblue;
+  font-size: 10px;
+  padding: 14px;
+  border: 1px solid lightblue;
+}
+
+/* サイドバー下部 */
+
+.side_box_chatrooms{
+  color: white;
+  margin-bottom: 40px;
+}
+
+/* チャット画面上部 */
+
+.main_header_logo{
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+
+.main_header_btn{
+  display: flex;
+  align-items: center;
+}
+
+.chat_end{
+  color: darkred;
+  padding: 20px;
+  border: 1px solid darkred;
+  text-align: center;
+}
+
+/* チャットメイン画面 */
+
+.main_box_contents{
+  width: 100%;
+  padding-top: 10px;
+  margin-bottom: 40px;
+}
+
+.main_box_content{
+  display: flex;
+}
+
+.main_box_name{
+  color: #434a54;
+  font-size: 16px;
+}
+
+.main_box_date{
+  color: #999;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.main_box_messages{
+  color: #434a54;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* チャット画面下部 */
+
+.main_footer_form{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_form_contents{
+  background-color: white;
+  width: 100%;
+  display: flex;
+}
+
+.main_footer_text{
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  border: none;
+}
+
+.main_footer_image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+
+.image_file_commit{
+  display: none;
+}
+
+.main_footer_commit{
+  background-color: #38aef0;
+  color: white;
+  height: 100%;
+  font-size: 16px;
+  padding: 0 20px;
+  border: none;
+  margin-left: 15px;
+  text-align: center;
+}
