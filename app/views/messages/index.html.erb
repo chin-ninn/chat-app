@@ -2,7 +2,7 @@
   <div class="side">
     <div class="side_header">
       <div class="side_header_user">
-        Tom
+        <%= link_to current_user.name, edit_user_path(current_user) %>
       </div>
       <div class="side_header_btn">
         チャットを作成する
