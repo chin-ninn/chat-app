@@ -35,7 +35,7 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :room_users:
+- has_many :room_users
 - has_many :rooms, through: room_users
 - has_many :massages
 
