@@ -7,13 +7,7 @@
   </div>
 </div>
 <div class="main_box">
-  <div class="main_box_contents">
-    <div class="main_box_content">
-      <div class="main_box_name">Tom</div>
-      <div class="main_box_date">2020/3/31(Wed) 12:34:56</div>
-    </div>
-    <div class="main_box_messages">おはよう</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <div class="main_footer">
   <%= form_with model: [@room, @message], class: 'main_footer_form', local: true do |f| %>
