@@ -16,15 +16,14 @@
   </div>
 </div>
 <div class="main_footer">
-  <form class="main_footer_form">
+  <%= form_with model: [@room, @message], class: 'main_footer_form', local: true do |f| %>
     <div class="footer_form_contents">
-      <input class="main_footer_text" type="text" placeholder="type a message">
+      <%= f.text_field :content, class: 'main_footer_text', placeholder: 'type a message' %>
       <label class="main_footer_image">
         <span class="image_file">画像<span>
-        <input class="image_file_commit" type="file">
+        <%= f.file_field :image, class: 'image_file_commit' %>
       </label>
     </div>
-    <input class="main_footer_commit" type="submit" value="送信">
-  </form>
-
+    <%= f.submit '送信', class: 'main_footer_commit' %>
+  <% end %>
 </div>
